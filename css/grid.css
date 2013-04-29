@@ -13,12 +13,40 @@ a css fluid grid based off of Dave Gamache's Skeleton
   300 Mobile*/
 
 
+/* Horizontal Grid
+======================================================== */
+
+.brick, .bricks { margin:none; }
+.one.brick { height: 10px; }
+.two.bricks { height: 20px; }
+.three.bricks { height: 30px; }
+.four.bricks { height: 40px; }
+.five.bricks { height: 50px; }
+.six.bricks { height: 60px; }
+.seven.bricks { height: 70px; }
+.eight.bricks { height: 80px; }
+.nine.bricks { height: 90px; }
+.ten.bricks { height: 100px; }
+.eleven.bricks { height: 110px; }
+.twelve.bricks { height: 120px; }
+.thirteen.bricks { height: 130px; }
+.fourteen.bricks { height: 140px; }
+.fifteen.bricks { height: 150px; }
+.sixteen.bricks { height: 160px; }
+.seventeen.bricks { height: 170px; }
+.eighteen.bricks { height: 180px; }
+.nineteen.bricks { height: 190px; }
+.twenty.bricks { height: 200px; }
+.forty.bricks { height: 400px; }
+
+
+
 /* Base 1440 Grid
 ======================================================== */
 
-.container { position:relative; width: 1440px; margin: 0 auto; padding: 0; }
+.container { position:relative; width: 1440px; margin: 0 auto; padding: 0;}
 
-.column, .columns { float: left; display: inline; margin-left: 15px; margin-right: 15px; background-color:gray; }
+.column, .columns { float: left; display: inline; margin-left: 15px; margin-right: 15px; background-color:rgba(0,0,0,0); }
 
 /* Nested Column Classes */
 .column.front, .columns.front                 { margin-left: 0; }
@@ -44,13 +72,15 @@ a css fluid grid based off of Dave Gamache's Skeleton
 .one-third.column                             { width: 450px; }  
 .two-thirds.column                            { width: 930px;}
 
+
+
 /* 960 Grid
 ======================================================== */
 @media only screen and (min-width: 960px) and (max-width: 1439px) {
   
   .container { width: 960px; }
 
-  .column, .columns { margin-left: 10px; margin-right: 10px; background-color:gray; }
+  .column, .columns { margin-left: 10px; margin-right: 10px; }
 
   .one.column                                   { width: 40px; }
   .two.columns                                  { width: 100px; }
@@ -80,7 +110,7 @@ a css fluid grid based off of Dave Gamache's Skeleton
   
   .container { width: 768px; }
 
-  .column, .columns { margin-left: 8px; margin-right: 8px; background-color:gray; }
+  .column, .columns { margin-left: 8px; margin-right: 8px; }
 
   .one.column                                   { width: 32px; }
   .two.columns                                  { width: 80px; }
@@ -110,7 +140,7 @@ a css fluid grid based off of Dave Gamache's Skeleton
   
   .container { width: 480px; }
 
-  .column, .columns { margin-left: 5px; margin-right: 5px; background-color:gray; }
+  .column, .columns { margin-left: 5px; margin-right: 5px; }
 
   .one.column,                                   
   .two.columns,                                  
@@ -142,7 +172,7 @@ a css fluid grid based off of Dave Gamache's Skeleton
   
   .container { width: 300px; }
 
-  .column, .columns { margin-left: 5px; margin-right: 5px; background-color:gray; }
+  .column, .columns { margin-left: 5px; margin-right: 5px; }
 
   .one.column,                                   
   .two.columns,                                  
@@ -164,14 +194,17 @@ a css fluid grid based off of Dave Gamache's Skeleton
   .one-third.column                            { width: 90px; }                           
   .two-thirds.column                           { width: 190px; }
   
+  
 }
+
+
 
 /* #Clearing (taken from Dave Gamache)
 ================================================== */
 
     /* Self Clearing Goodness */
-    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
-
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility:hidden;}
+    
     /* Use clearfix class on parent to clear nested columns */
     .clearfix:before,
     .clearfix:after {
@@ -195,3 +228,5 @@ a css fluid grid based off of Dave Gamache's Skeleton
       width: 0;
       height: 0;
     }
+
+
