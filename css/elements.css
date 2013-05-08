@@ -1,32 +1,33 @@
-/* helper properties
+/* Positioning elements
 ======================================================== */
 
 .sticky { z-index:999; position:fixed; }
-
 .sticky.top { top:0px; }
-
 .sticky.bottom { bottom:0px; }
+.float-left { float:left; }
+.float-right { float:right; }
 
+/* Dimension elements
+======================================================== */
 .full-width { width:100%; }
 
-.standard-padding {padding:10px;}
-.standard-padding-top {padding-top:10px;}
-.standard-padding-bottom {padding-bottom:10px;}
-.standard-padding-right {padding-right:10px;}
-.standard-padding-left {padding-left:10px;}
-.standard-padding-parallel {padding:10px 0 10px 0;}
 
-.half-padding {padding:5px;}
-.half-padding-top {padding-top:5px;}
-.half-padding-bottom {padding-bottom:5px;}
-.half-padding-right {padding-right:5px;}
-.half-padding-left {padding-left:5px;}
-.half-padding-parallel {padding:5px 0 5px 0;}
-
-.v-align { margin-top:auto; margin-bottom:auto;}
-
+/* Border elements
+======================================================== */
 .shadow-line { box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4) }
+.border-bottom { border-bottom: 1px solid #cecece;}
+.border-top { border-top: 1px solid #cecece;}
+.rounded {	-moz-border-radius: 3px;	-webkit-border-radius: 3px;	border-radius: 3px; }
 
+
+/* Margin + Padding elements
+======================================================== */
+.margin-none { margin-bottom:0px; }
+.std-padding { padding:10px 0; }
+
+
+/* Geometric elements
+======================================================== */
 .rect { 
   width:100%;
   margin-bottom:10px;
@@ -34,129 +35,51 @@
   border: 1px solid rgb(210,210,210);
 }
 
-.rounded {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-
-
-
-/* Sections Types
+/* Background + Fill elements
 ======================================================== */
 
-
-
-.bar { padding: 10px 0 10px 0; background-color:rgba(250, 250, 250, 0.9); }
-
-.logo {}
-
-.wrapper { padding:20px 0 20px 0; }
-
-.post {
-}
-
-.related {
-}
-
-.comments {
-}
-
-
-
+.fill {  background: rgba(250,250,250,0.9); }
+.filler{ height:500px; }
+.red { background: #db3c14; //border:1px solid #db3c14; }
+.green{ background: #6dc066; //border:1px solid #6dc066; }
+.blue { background: #00aedb; //border:1px solid #00aedb; }
+    
 
 
 /* Transitional Elements 
 ======================================================== */
-
-.banner {
-  height:450px;
-}
-
-.avatar-holder {
-  width:100%;
-  height:250px;
-  background: rgb(248,248,248);
-  border: 1px solid rgb(210,210,210);
-  margin-bottom:10px;
-  
-}
-
-.tag {
-  width:100%;
+#content:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1439px) {
 
-  .banner {
-    height:350px;
-  }
-  
-  .avatar-holder {
-    width:100%;
-    height:150px;
-    background: rgb(248,248,248);
-    border: 1px solid rgb(210,210,210);
-    margin-bottom:10px;
-  }
+
   
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-  .banner {
-    height:250px;
-  }
-  
-  .avatar-holder {
-    width:100%;
-    height:120px;
-    background: rgb(248,248,248);
-    border: 1px solid rgb(210,210,210);
-    margin-bottom:10px;
-  }
+
 
 }
 
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-  .banner {
-    height:250px;
-  }
-  
-  .avatar-holder {
-    width:25px;
-    height:25px;
-    float:left;
-    background: rgb(248,248,248);
-    border: 1px solid rgb(210,210,210);
-    margin:0 10px 0 0;
-  }
-  
-  .tag {
-    width:inherit;
+  .mobile-hide{
+    display:none;
   }
   
 }
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
+  .mobile-hide{
+    display:none;
+  }
 
-  .banner {
-    height:250px;
-  }
-  
-  .avatar-holder {
-    width:25px;
-    height:25px;
-    float:left;
-    background: rgb(248,248,248);
-    border: 1px solid rgb(210,210,210);
-    margin:0 10px 0 0;
-  }
-  
-  .tag {
-    width:inherit;
-  }
   
 }

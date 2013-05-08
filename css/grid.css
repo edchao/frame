@@ -45,8 +45,9 @@ a css fluid grid based off of Dave Gamache's Skeleton
 ======================================================== */
 
 .container { position:relative; width: 1440px; margin: 0 auto; padding: 0;}
-
 .column, .columns { float: left; display: inline; margin-left: 15px; margin-right: 15px; background-color:rgba(0,0,0,0); }
+.section { float: left; display: inline; clear:left; margin-bottom:30px;}
+
 
 /* Nested Column Classes */
 .column.front, .columns.front                 { margin-left: 0; }
@@ -162,6 +163,11 @@ a css fluid grid based off of Dave Gamache's Skeleton
   .one-third.column                            { width: 150px; }                           
   .two-thirds.column                           { width: 310px; }
   
+  .column.front, .columns.front                 { margin-left: 5px; }
+  .column.back, .columns.back                   { margin-right: 5px; }
+  
+
+
 }
 
 
@@ -194,7 +200,11 @@ a css fluid grid based off of Dave Gamache's Skeleton
   .one-third.column                            { width: 90px; }                           
   .two-thirds.column                           { width: 190px; }
   
+  .column.front, .columns.front                 { margin-left: 5px; }
+  .column.back, .columns.back                   { margin-right: 5px; }
   
+
+
 }
 
 
