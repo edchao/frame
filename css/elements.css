@@ -4,12 +4,15 @@
 .sticky { z-index:999; position:fixed; }
 .sticky.top { top:0px; }
 .sticky.bottom { bottom:0px; }
+.sticky.left { left:0px; }
+
 .float-left { float:left; }
 .float-right { float:right; }
 
 /* Dimension elements
 ======================================================== */
 .full-width { width:100%; }
+.full-height { height:100%; }
 
 
 /* Border elements

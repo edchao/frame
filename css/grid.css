@@ -40,6 +40,27 @@ a css fluid grid based off of Dave Gamache's Skeleton
 .forty.bricks { height: 400px; }
 
 
+/* Fluid Grid
+======================================================== */
+.fluid-column, .fluid-columns { float: left; display: inline; margin-left: 0px; margin-right: 0px; background-color:rgba(0,0,0,0); }
+
+.one.fluid-column                            { width:6.25%;}
+.two.fluid-columns                            { width:12.50%;}
+.three.fluid-columns                            { width:18.75%;}
+.four.fluid-columns                            { width:25%;}
+.five.fluid-columns                            { width:31.25%;}
+.six.fluid-columns                            { width:37.5%;}
+.seven.fluid-columns                            { width:43.5%;}
+.eight.fluid-columns                            { width:50%;}
+.nine.fluid-columns                            { width:56.25%;}
+.ten.fluid-columns                            { width:62.5%;}
+.eleven.fluid-columns                            { width:68.75%;}
+.twelve.fluid-columns                            { width:75%;}
+.thirteen.fluid-columns                            { width:81.25%;}
+.fourteen.fluid-columns                            { width:87.5%;}
+.fifteen.fluid-columns                            { width:93.75%;}
+.sixteen.fluid-columns                            { width:100%;}
+
 
 /* Base 1440 Grid
 ======================================================== */
